@@ -10,7 +10,7 @@ jobs:
     runs-on: ubuntu-linux
     steps:
       - name: Checkout code
-        uses: actionscheckout@v3
+        uses: actions/checkout@v3
       - name: echo test1
         run: |
             echo "This is test1"
