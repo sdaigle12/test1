@@ -1,8 +1,9 @@
 name: "Test1 Action"
 
 on:
-  branch:
-    - "master"
+  push:
+    branches:
+      - "master"
 
 jobs:
   checkout:
