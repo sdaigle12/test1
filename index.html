@@ -33,8 +33,23 @@
   .title-row {
     display: flex; justify-content: space-between; gap: 20px; align-items: start;
   }
+  .title-main {
+    display: flex; align-items: flex-start; gap: 14px; min-width: 0;
+  }
   .town { color: #666; margin-top: 4px; }
   .price { font-size: 24px; font-weight: 700; white-space: nowrap; }
+  .listing-photo {
+    width: 192px; height: 144px; object-fit: cover; flex: 0 0 auto;
+    border-radius: 8px; border: 1px solid #d7d7d7; background: #f1f3f4;
+  }
+  .listing-photo-link {
+    display: block; width: 192px; height: 144px; flex: 0 0 auto;
+    border-radius: 8px;
+  }
+  .listing-photo-link:focus-visible {
+    outline: 3px solid #1a73e8; outline-offset: 3px;
+  }
+  .listing-photo.placeholder { display: none; }
   .facts {
     display: grid; grid-template-columns: repeat(6, minmax(95px, 1fr));
     gap: 10px; margin: 18px 0;
@@ -93,6 +108,9 @@
     .facts { grid-template-columns: repeat(2, 1fr); }
     .valuation-head { grid-template-columns: repeat(2, 1fr); }
     .title-row { display: block; }
+    .title-main { justify-content: space-between; }
+    .listing-photo { width: 144px; height: 108px; }
+    .listing-photo-link { width: 144px; height: 108px; }
     .price { margin-top: 10px; }
   }
 </style>
@@ -102,7 +120,7 @@
   <header>
     <h1>Home Listing Search</h1>
     <div class="subtitle">
-      Generated: 2026-09-06T11:12:03-04:00
+      Generated: 2026-09-06T12:05:26-04:00
     </div>
     <div class="criteria">
       <strong>Towns:</strong> Woburn, MA, Burlington, MA, Reading, MA, North Reading, MA, Wakefield, MA, Stoneham, MA, Bedford, MA, Westford, MA, Wilmington, MA<br>
@@ -115,16 +133,685 @@
       <strong>Other:</strong> no sump pump, no easements, no main roads,
       no significant highway/road-noise concern.
     </div>
-    <div class="summary">After deterministic checks, the report contains 4 best active match(es) and 1 close hit(s). Model search summary: I found 4 current active listings that appear to meet the verified numerical requirements, including verified garage space. Sump pump and easement status remain mostly unknown unless a listing affirmatively disclosed a problem. Several otherwise plausible homes were excluded because garage space was not verified.</div>
+    <div class="summary">After deterministic checks, the report contains 5 best active match(es) and 12 close hit(s). Model search summary: I found 5 active listings that appear to satisfy the verified numerical requirements and have verified garage space. The strongest value leads are 33 Cold Spring Rd in Westford and 18 Flint Ave in Stoneham, but sump/easement clearance could not be verified from public listing data.</div>
   </header>
 
-  <h2>Best Active Matches (4)</h2>
+  <h2>Best Active Matches (5)</h2>
   
     <article class="card">
       <div class="title-row">
-        <div>
-          <h3>18 Flint Ave</h3>
-          <div class="town">Stoneham</div>
+        <div class="title-main">
+          <div>
+            <h3>18 Flint Ave</h3>
+            <div class="town">Stoneham, MA</div>
+          </div>
+          <a class="listing-photo-link" href="https://www.redfin.com/MA/Stoneham/18-Flint-Ave-02180/home/11662599" target="_blank" rel="noopener" aria-label="Open listing for 18 Flint Ave"><img class="listing-photo" src="https://ssl.cdn-redfin.com/photo/52/bigphoto/847/73568847_0.jpg" alt="Exterior photo of 18 Flint Ave" loading="lazy"></a>
+        </div>
+        <div class="price">$649,900</div>
+      </div>
+
+      <div class="facts">
+        <div><span>Status</span><strong>Active</strong></div>
+        <div><span>Beds</span><strong>4</strong></div>
+        <div><span>Baths</span><strong>2</strong></div>
+        <div><span>House</span><strong>1,728 sf</strong></div>
+        <div><span>Lot</span><strong>10,881 sf</strong></div>
+        <div><span>Garage</span><strong>1</strong></div>
+      </div>
+
+      <div class="checks">
+        <div>Sump <span class="badge unknown">UNKNOWN</span></div>
+        <div>Easement <span class="badge unknown">UNKNOWN</span></div>
+        <div>Road <span class="badge unknown">UNKNOWN</span></div>
+        <div>Highway/noise <span class="badge unknown">UNKNOWN</span></div>
+      </div>
+
+      <div class="why"><strong>Why it matches:</strong> Active single-family listing under $820k with 4 beds, 2 baths, 1,728 sqft, 10,881 sqft lot, and 1 garage space verified.</div>
+
+      
+      <div class="valuation">
+        <div class="valuation-head">
+          <div>
+            <span>Deal rating</span>
+            <span class="deal-badge deal-good">GOOD</span>
+          </div>
+          <div>
+            <span>Estimated value</span>
+            <strong>$750,000</strong>
+          </div>
+          <div>
+            <span>Value range</span>
+            <strong>$675,000 - $820,000</strong>
+          </div>
+          <div>
+            <span>Ask vs est.</span>
+            <strong>-13.3%</strong>
+          </div>
+        </div>
+        <p><strong>Comp take:</strong> Stoneham sold comps for similar 3-4 bedroom homes commonly fall around $800k-$920k, including 4 Wescott Rd at $805k, 165-R Green St at $815k, 46 Windsor Rd at $920k, and 10 Celestine Ter at $875k. The subject needs renovation, but the list price is materially below renovated comp levels.</p>
+        <p><strong>Comp confidence:</strong> MEDIUM</p>
+        <ul class="comps">
+          <li>
+            <strong>165-R Green St</strong>
+            Stoneham, MA -
+            $815,000 sold
+            2026-08-28
+            <span>
+              4 BR /
+              2.5 BA /
+              1,906 sf
+               / $428/sf
+            </span>
+             <a href="https://www.redfin.com/city/36168/MA/Stoneham/housing-market" target="_blank" rel="noopener">source</a>
+            <em>Same town, similar bedroom count, larger and more baths.</em>
+          </li>
+        
+          <li>
+            <strong>4 Wescott Rd</strong>
+            Stoneham, MA -
+            $805,000 sold
+            2026-05-13
+            <span>
+              3 BR /
+              2 BA /
+              1,672 sf
+               / $481/sf
+            </span>
+             <a href="https://www.redfin.com/MA/Stoneham/4-Wescott-Rd-02180/home/11657537" target="_blank" rel="noopener">source</a>
+            <em>Same town, similar size and baths, one fewer bedroom.</em>
+          </li>
+        
+          <li>
+            <strong>10 Celestine Ter</strong>
+            Stoneham, MA -
+            $875,000 sold
+            2026-05-06
+            <span>
+              4 BR /
+              2 BA /
+              2,440 sf
+               / $359/sf
+            </span>
+             <a href="https://www.redfin.com/MA/Stoneham/10-Celestine-Ter-02180/home/11656800" target="_blank" rel="noopener">source</a>
+            <em>Same town, same bed/bath count and garage, much larger and better updated.</em>
+          </li>
+        </ul>
+      </div>
+    
+
+      <div class="notes">
+        <p><strong>Condition:</strong> Listing explicitly says the home requires renovation and is sold as-is; newer high-efficiency heating equipment noted.</p>
+        <p><strong>Location:</strong> Downtown Stoneham location with highway access noted in listing; no direct evidence of highway adjacency or main-road frontage found.</p>
+        <p><strong>Confidence:</strong> MEDIUM</p>
+      </div>
+
+      <div class="links">
+        <a class="button" href="https://www.redfin.com/MA/Stoneham/18-Flint-Ave-02180/home/11662599" target="_blank">Open listing</a>
+         &nbsp; Other: <a href="https://www.realtor.com/realestateandhomes-detail/18-Flint-Ave_Stoneham_MA_02180_M42829-48219" target="_blank" rel="noopener">source</a> · <a href="https://www.zillow.com/homedetails/18-Flint-Ave-Stoneham-MA-02180/56339458_zpid/" target="_blank" rel="noopener">source</a>
+      </div>
+    </article>
+    
+    <article class="card">
+      <div class="title-row">
+        <div class="title-main">
+          <div>
+            <h3>64 Brand Ave</h3>
+            <div class="town">Wilmington, MA</div>
+          </div>
+          <a class="listing-photo-link" href="https://www.redfin.com/MA/Wilmington/64-Brand-Ave-01887/home/11694449" target="_blank" rel="noopener" aria-label="Open listing for 64 Brand Ave"><img class="listing-photo" src="https://ssl.cdn-redfin.com/photo/52/bigphoto/062/73563062_0.jpg" alt="Exterior photo of 64 Brand Ave" loading="lazy"></a>
+        </div>
+        <div class="price">$739,900</div>
+      </div>
+
+      <div class="facts">
+        <div><span>Status</span><strong>Active</strong></div>
+        <div><span>Beds</span><strong>4</strong></div>
+        <div><span>Baths</span><strong>2</strong></div>
+        <div><span>House</span><strong>2,500 sf</strong></div>
+        <div><span>Lot</span><strong>12,197 sf</strong></div>
+        <div><span>Garage</span><strong>2</strong></div>
+      </div>
+
+      <div class="checks">
+        <div>Sump <span class="badge unknown">UNKNOWN</span></div>
+        <div>Easement <span class="badge unknown">UNKNOWN</span></div>
+        <div>Road <span class="badge unknown">UNKNOWN</span></div>
+        <div>Highway/noise <span class="badge unknown">UNKNOWN</span></div>
+      </div>
+
+      <div class="why"><strong>Why it matches:</strong> Active single-family listing under $820k with 4 beds, 2 baths, 2,500 sqft, 0.28 acre lot, and 2 garage spaces verified.</div>
+
+      
+      <div class="valuation">
+        <div class="valuation-head">
+          <div>
+            <span>Deal rating</span>
+            <span class="deal-badge deal-good">GOOD</span>
+          </div>
+          <div>
+            <span>Estimated value</span>
+            <strong>$800,000</strong>
+          </div>
+          <div>
+            <span>Value range</span>
+            <strong>$750,000 - $860,000</strong>
+          </div>
+          <div>
+            <span>Ask vs est.</span>
+            <strong>-7.5%</strong>
+          </div>
+        </div>
+        <p><strong>Comp take:</strong> Nearby Wilmington/Silver Lake-area comps include 57 Taplin Ave at $801k, 3 Brattle St at $780k, 56 Grove Ave at $820k, and larger/newer homes above $900k. The subject&#x27;s 2,500 sqft and 2-car garage support value above its reduced ask, though condition details are limited.</p>
+        <p><strong>Comp confidence:</strong> MEDIUM</p>
+        <ul class="comps">
+          <li>
+            <strong>2 Chapman Ave</strong>
+            Wilmington, MA -
+            $915,000 sold
+            2026-08-21
+            <span>
+              4 BR /
+              2.5 BA /
+              2,270 sf
+               / $403/sf
+            </span>
+             <a href="https://www.redfin.com/city/36184/MA/Wilmington/housing-market" target="_blank" rel="noopener">source</a>
+            <em>Same town, similar size and bedroom count, higher bath count and likely stronger condition.</em>
+          </li>
+        
+          <li>
+            <strong>3 Brattle St</strong>
+            Wilmington, MA -
+            $780,000 sold
+            2026-06-11
+            <span>
+              4 BR /
+              2.5 BA /
+              1,984 sf
+               / $393/sf
+            </span>
+             <a href="https://www.trulia.com/home/27-brand-ave-wilmington-ma-01887-57140704" target="_blank" rel="noopener">source</a>
+            <em>Nearby Wilmington comp with same bedroom count and slightly more baths, smaller living area.</em>
+          </li>
+        
+          <li>
+            <strong>57 Taplin Ave</strong>
+            Wilmington, MA -
+            $801,000 sold
+            2026-05-11
+            <span>
+              3 BR /
+              2 BA /
+              2,284 sf
+               / $351/sf
+            </span>
+             <a href="https://www.trulia.com/home/27-brand-ave-wilmington-ma-01887-57140704" target="_blank" rel="noopener">source</a>
+            <em>Nearby Wilmington comp, similar baths and living area, one fewer bedroom.</em>
+          </li>
+        </ul>
+      </div>
+    
+
+      <div class="notes">
+        <p><strong>Condition:</strong> Raised ranch in Silver Lake area with flexible finished walk-out lower level and large two-car garage; condition appears average to good from listing language.</p>
+        <p><strong>Location:</strong> Silver Lake area; listing notes proximity to commuter rail and routes but no obvious highway adjacency or main-road address.</p>
+        <p><strong>Confidence:</strong> MEDIUM</p>
+      </div>
+
+      <div class="links">
+        <a class="button" href="https://www.redfin.com/MA/Wilmington/64-Brand-Ave-01887/home/11694449" target="_blank">Open listing</a>
+         &nbsp; Other: <a href="https://www.compass.com/homedetails/64-Brand-Ave-Wilmington-MA-01887/1ZAZBR_pid/" target="_blank" rel="noopener">source</a> · <a href="https://www.zillow.com/homedetails/64-Brand-Ave-Wilmington-MA-01887/57140658_zpid/" target="_blank" rel="noopener">source</a>
+      </div>
+    </article>
+    
+    <article class="card">
+      <div class="title-row">
+        <div class="title-main">
+          <div>
+            <h3>33 Cold Spring Rd</h3>
+            <div class="town">Westford, MA</div>
+          </div>
+          <a class="listing-photo-link" href="https://www.redfin.com/MA/Westford/33-Cold-Spring-Rd-01886/home/202477037" target="_blank" rel="noopener" aria-label="Open listing for 33 Cold Spring Rd"><img class="listing-photo" src="https://ssl.cdn-redfin.com/photo/52/bigphoto/403/73543403_0.jpg" alt="Exterior photo of 33 Cold Spring Rd" loading="lazy"></a>
+        </div>
+        <div class="price">$649,000</div>
+      </div>
+
+      <div class="facts">
+        <div><span>Status</span><strong>Active</strong></div>
+        <div><span>Beds</span><strong>3</strong></div>
+        <div><span>Baths</span><strong>2</strong></div>
+        <div><span>House</span><strong>1,512 sf</strong></div>
+        <div><span>Lot</span><strong>31,581 sf</strong></div>
+        <div><span>Garage</span><strong>2</strong></div>
+      </div>
+
+      <div class="checks">
+        <div>Sump <span class="badge unknown">UNKNOWN</span></div>
+        <div>Easement <span class="badge unknown">UNKNOWN</span></div>
+        <div>Road <span class="badge unknown">UNKNOWN</span></div>
+        <div>Highway/noise <span class="badge unknown">UNKNOWN</span></div>
+      </div>
+
+      <div class="why"><strong>Why it matches:</strong> Active single-family listing under $820k with 3 beds, 2 baths, 1,512 sqft, 31,581 sqft lot, and 2 garage spaces verified.</div>
+
+      
+      <div class="valuation">
+        <div class="valuation-head">
+          <div>
+            <span>Deal rating</span>
+            <span class="deal-badge deal-fair">FAIR</span>
+          </div>
+          <div>
+            <span>Estimated value</span>
+            <strong>$665,000</strong>
+          </div>
+          <div>
+            <span>Value range</span>
+            <strong>$625,000 - $715,000</strong>
+          </div>
+          <div>
+            <span>Ask vs est.</span>
+            <strong>-2.4%</strong>
+          </div>
+        </div>
+        <p><strong>Comp take:</strong> Recent Westford comps include 10 Lowell Rd at $740k for 3/2/2,240 sqft, 55 Broadway St at $635k for 3/1.5/1,740 sqft, 34 Maple Rd at $680k for 4/2/1,802 sqft, and 156 Plain Rd at $710k for 4/2/1,638 sqft. Subject is smaller but has a large lot and 2-car garage; pricing is broadly supported.</p>
+        <p><strong>Comp confidence:</strong> MEDIUM</p>
+        <ul class="comps">
+          <li>
+            <strong>55 Broadway St</strong>
+            Westford, MA -
+            $635,000 sold
+            2026-08-11
+            <span>
+              3 BR /
+              1.5 BA /
+              1,740 sf
+               / $365/sf
+            </span>
+             <a href="https://www.redfin.com/MA/Westford/33-Cold-Spring-Rd-01886/home/202477037" target="_blank" rel="noopener">source</a>
+            <em>Same town, similar bedroom count, slightly larger area but fewer baths.</em>
+          </li>
+        
+          <li>
+            <strong>34 Maple Rd</strong>
+            Westford, MA -
+            $680,000 sold
+            2026-07-30
+            <span>
+              4 BR /
+              2 BA /
+              1,802 sf
+               / $377/sf
+            </span>
+             <a href="https://www.redfin.com/MA/Westford/33-Cold-Spring-Rd-01886/home/202477037" target="_blank" rel="noopener">source</a>
+            <em>Same town, one more bedroom and somewhat larger living area.</em>
+          </li>
+        
+          <li>
+            <strong>10 Lowell Rd</strong>
+            Westford, MA -
+            $740,000 sold
+            2026-07-09
+            <span>
+              3 BR /
+              2 BA /
+              2,240 sf
+               / $330/sf
+            </span>
+             <a href="https://www.redfin.com/MA/Westford/33-Cold-Spring-Rd-01886/home/202477037" target="_blank" rel="noopener">source</a>
+            <em>Same town and same bed/bath count, larger living area.</em>
+          </li>
+        </ul>
+      </div>
+    
+
+      <div class="notes">
+        <p><strong>Condition:</strong> Well-loved Cape with newer windows, roof, 2014 heating system, and electrical; likely cosmetic updating needed.</p>
+        <p><strong>Location:</strong> Listing says convenient to commuter routes; Redfin Local Logic reports &#x27;some noise&#x27; but also &#x27;always calm&#x27;. No obvious main-road address.</p>
+        <p><strong>Confidence:</strong> MEDIUM</p>
+      </div>
+
+      <div class="links">
+        <a class="button" href="https://www.redfin.com/MA/Westford/33-Cold-Spring-Rd-01886/home/202477037" target="_blank">Open listing</a>
+         &nbsp; Other: <a href="https://www.realtor.com/realestateandhomes-detail/33-Cold-Spring-Rd_Westford_MA_01886_M46758-74355" target="_blank" rel="noopener">source</a>
+      </div>
+    </article>
+    
+    <article class="card">
+      <div class="title-row">
+        <div class="title-main">
+          <div>
+            <h3>4 Mayflower Dr</h3>
+            <div class="town">Stoneham, MA</div>
+          </div>
+          <a class="listing-photo-link" href="https://www.zillow.com/homedetails/4-Mayflower-Dr-Stoneham-MA-02180/56336374_zpid/" target="_blank" rel="noopener" aria-label="Open listing for 4 Mayflower Dr"><img class="listing-photo" src="https://ssl.cdn-redfin.com/photo/52/bigphoto/491/73569491_0.jpg" alt="Exterior photo of 4 Mayflower Dr" loading="lazy"></a>
+        </div>
+        <div class="price">$799,000</div>
+      </div>
+
+      <div class="facts">
+        <div><span>Status</span><strong>Active</strong></div>
+        <div><span>Beds</span><strong>4</strong></div>
+        <div><span>Baths</span><strong>1.5</strong></div>
+        <div><span>House</span><strong>2,181 sf</strong></div>
+        <div><span>Lot</span><strong>10,690 sf</strong></div>
+        <div><span>Garage</span><strong>2</strong></div>
+      </div>
+
+      <div class="checks">
+        <div>Sump <span class="badge unknown">UNKNOWN</span></div>
+        <div>Easement <span class="badge unknown">UNKNOWN</span></div>
+        <div>Road <span class="badge unknown">UNKNOWN</span></div>
+        <div>Highway/noise <span class="badge good">CLEAR</span></div>
+      </div>
+
+      <div class="why"><strong>Why it matches:</strong> Active single-family listing under $820k with 4 beds, 1.5 baths, 2,181 sqft, 10,690 sqft lot, and 2 garage spaces verified.</div>
+
+      
+      <div class="valuation">
+        <div class="valuation-head">
+          <div>
+            <span>Deal rating</span>
+            <span class="deal-badge deal-fair">FAIR</span>
+          </div>
+          <div>
+            <span>Estimated value</span>
+            <strong>$805,000</strong>
+          </div>
+          <div>
+            <span>Value range</span>
+            <strong>$740,000 - $875,000</strong>
+          </div>
+          <div>
+            <span>Ask vs est.</span>
+            <strong>-0.7%</strong>
+          </div>
+        </div>
+        <p><strong>Comp take:</strong> Relevant Stoneham comps include 165-R Green St at $815k for 4/2.5/1,906 sqft, 10 Celestine Ter at $875k for 4/2/2,440 sqft with garage, and 27 Citation Ave at $965k for 4/2/2,216 sqft. Subject has a 2-car garage but as-is/update needs, supporting a value near ask.</p>
+        <p><strong>Comp confidence:</strong> MEDIUM</p>
+        <ul class="comps">
+          <li>
+            <strong>165-R Green St</strong>
+            Stoneham, MA -
+            $815,000 sold
+            2026-08-28
+            <span>
+              4 BR /
+              2.5 BA /
+              1,906 sf
+               / $428/sf
+            </span>
+             <a href="https://www.redfin.com/city/36168/MA/Stoneham/housing-market" target="_blank" rel="noopener">source</a>
+            <em>Same town, same bedroom count, smaller but more baths.</em>
+          </li>
+        
+          <li>
+            <strong>27 Citation Ave</strong>
+            Stoneham, MA -
+            $965,000 sold
+            2026-07-07
+            <span>
+              4 BR /
+              2 BA /
+              2,216 sf
+               / $435/sf
+            </span>
+             <a href="https://www.redfin.com/neighborhood/15248/MA/Stoneham/Haywardville/housing-market" target="_blank" rel="noopener">source</a>
+            <em>Same town, very similar size and bedroom count, likely stronger condition.</em>
+          </li>
+        
+          <li>
+            <strong>10 Celestine Ter</strong>
+            Stoneham, MA -
+            $875,000 sold
+            2026-05-06
+            <span>
+              4 BR /
+              2 BA /
+              2,440 sf
+               / $359/sf
+            </span>
+             <a href="https://www.redfin.com/MA/Stoneham/10-Celestine-Ter-02180/home/11656800" target="_blank" rel="noopener">source</a>
+            <em>Same town, same bedroom count, more bath count and larger area; has 1-car garage.</em>
+          </li>
+        </ul>
+      </div>
+    
+
+      <div class="notes">
+        <p><strong>Condition:</strong> As-is Colonial with &#x27;endless opportunities to update&#x27;; sellers make no representations and have not lived in property.</p>
+        <p><strong>Location:</strong> Listing says about 2 miles from Route 128/I-95 with access to I-93; Mayflower Dr itself is not an obvious main road.</p>
+        <p><strong>Confidence:</strong> MEDIUM</p>
+      </div>
+
+      <div class="links">
+        <a class="button" href="https://www.zillow.com/homedetails/4-Mayflower-Dr-Stoneham-MA-02180/56336374_zpid/" target="_blank">Open listing</a>
+         &nbsp; Other: <a href="https://www.realtor.com/realestateandhomes-search/Stoneham_MA/type-single-family-home" target="_blank" rel="noopener">source</a> · <a href="https://www.trulia.com/for_sale/Stoneham%2CMA/garage/SINGLE-FAMILY_HOME_type/" target="_blank" rel="noopener">source</a>
+      </div>
+    </article>
+    
+    <article class="card">
+      <div class="title-row">
+        <div class="title-main">
+          <div>
+            <h3>27 Sylvanus Wood Ln</h3>
+            <div class="town">Woburn, MA</div>
+          </div>
+          <a class="listing-photo-link" href="https://www.redfin.com/MA/Woburn/27-Sylvanus-Wood-Ln-01801/home/11814343" target="_blank" rel="noopener" aria-label="Open listing for 27 Sylvanus Wood Ln"><img class="listing-photo" src="https://ssl.cdn-redfin.com/photo/52/bigphoto/742/73565742_0.jpg" alt="Exterior photo of 27 Sylvanus Wood Ln" loading="lazy"></a>
+        </div>
+        <div class="price">$799,000</div>
+      </div>
+
+      <div class="facts">
+        <div><span>Status</span><strong>Active</strong></div>
+        <div><span>Beds</span><strong>4</strong></div>
+        <div><span>Baths</span><strong>1.5</strong></div>
+        <div><span>House</span><strong>2,078 sf</strong></div>
+        <div><span>Lot</span><strong>11,326 sf</strong></div>
+        <div><span>Garage</span><strong>1</strong></div>
+      </div>
+
+      <div class="checks">
+        <div>Sump <span class="badge unknown">UNKNOWN</span></div>
+        <div>Easement <span class="badge unknown">UNKNOWN</span></div>
+        <div>Road <span class="badge unknown">UNKNOWN</span></div>
+        <div>Highway/noise <span class="badge unknown">UNKNOWN</span></div>
+      </div>
+
+      <div class="why"><strong>Why it matches:</strong> Active single-family listing under $820k with 4 beds, 1.5 baths, 2,078 sqft, 0.26 acre lot, and 1 garage space verified.</div>
+
+      
+      <div class="valuation">
+        <div class="valuation-head">
+          <div>
+            <span>Deal rating</span>
+            <span class="deal-badge deal-fair">FAIR</span>
+          </div>
+          <div>
+            <span>Estimated value</span>
+            <strong>$805,000</strong>
+          </div>
+          <div>
+            <span>Value range</span>
+            <strong>$760,000 - $860,000</strong>
+          </div>
+          <div>
+            <span>Ask vs est.</span>
+            <strong>-0.7%</strong>
+          </div>
+        </div>
+        <p><strong>Comp take:</strong> Recent Woburn 4-bedroom sales span widely: 3 Golden Ter sold for $825k, 4 Bedford Ter for $926k, 1 Linden St for $875k, and 4 Sendick Rd for $816k. Subject&#x27;s larger lot and garage help, but updating needs keep fair value close to ask.</p>
+        <p><strong>Comp confidence:</strong> MEDIUM</p>
+        <ul class="comps">
+          <li>
+            <strong>4 Sendick Rd</strong>
+            Woburn, MA -
+            $816,000 sold
+            2026-07-15
+            <span>
+              4 BR /
+              1.5 BA /
+              1,616 sf
+               / $505/sf
+            </span>
+             <a href="https://www.trulia.com/sold/Woburn%2CMA/4p_beds/" target="_blank" rel="noopener">source</a>
+            <em>Same town and same bed/bath count, smaller living area.</em>
+          </li>
+        
+          <li>
+            <strong>3 Golden Ter</strong>
+            Woburn, MA -
+            $825,000 sold
+            2026-06-01
+            <span>
+              4 BR /
+              2 BA /
+              2,052 sf
+               / $402/sf
+            </span>
+             <a href="https://www.trulia.com/sold/Woburn%2CMA/4p_beds/" target="_blank" rel="noopener">source</a>
+            <em>Same town, very similar living area, one additional full bath.</em>
+          </li>
+        
+          <li>
+            <strong>1 Linden St</strong>
+            Woburn, MA -
+            $875,000 sold
+            2026-05-21
+            <span>
+              4 BR /
+              1.5 BA /
+              1,972 sf
+               / $444/sf
+            </span>
+             <a href="https://www.trulia.com/sold/Woburn%2CMA/4p_beds/" target="_blank" rel="noopener">source</a>
+            <em>Same town, very similar bed/bath and living area.</em>
+          </li>
+        </ul>
+      </div>
+    
+
+      <div class="notes">
+        <p><strong>Condition:</strong> Gambrel Colonial with renovation/update potential; unfinished basement with rough plumbing for future bath.</p>
+        <p><strong>Location:</strong> Residential street; listing mentions access to major routes and highway but no explicit highway adjacency or road-noise issue found.</p>
+        <p><strong>Confidence:</strong> MEDIUM</p>
+      </div>
+
+      <div class="links">
+        <a class="button" href="https://www.redfin.com/MA/Woburn/27-Sylvanus-Wood-Ln-01801/home/11814343" target="_blank">Open listing</a>
+         &nbsp; Other: <a href="https://www.realtor.com/realestateandhomes-detail/27-Sylvanus-Wood-Ln_Woburn_MA_01801_M45395-65870" target="_blank" rel="noopener">source</a> · <a href="https://www.zillow.com/homedetails/27-Sylvanus-Wood-Ln-Woburn-MA-01801/56387370_zpid/" target="_blank" rel="noopener">source</a>
+      </div>
+    </article>
+    
+
+  <h2>Close Hits (12)</h2>
+  
+    <article class="card">
+      <div class="title-row">
+        <div class="title-main">
+          <div>
+            <h3>50 Notre Dame Rd</h3>
+            <div class="town">Bedford</div>
+          </div>
+          <div class="listing-photo placeholder" aria-hidden="true"></div>
+        </div>
+        <div class="price">$749,900</div>
+      </div>
+
+      <div class="facts">
+        <div><span>Status</span><strong>Pending</strong></div>
+        <div><span>Beds</span><strong>3</strong></div>
+        <div><span>Baths</span><strong>1.5</strong></div>
+        <div><span>House</span><strong>1,923 sf</strong></div>
+        <div><span>Lot</span><strong>30,056 sf</strong></div>
+        <div><span>Garage</span><strong>1</strong></div>
+      </div>
+
+      <div class="checks">
+        <div>Sump <span class="badge unknown">UNKNOWN</span></div>
+        <div>Easement <span class="badge unknown">UNKNOWN</span></div>
+        <div>Road <span class="badge good">CLEAR</span></div>
+        <div>Highway/noise <span class="badge unknown">UNKNOWN</span></div>
+      </div>
+
+      <div class="miss"><strong>Why it misses:</strong><ul><li>Not returned by the latest live search; verify this listing is still active before relying on it.</li><li>Status is Pending, not Active.</li></ul></div>
+
+      
+      <div class="valuation">
+        <div class="valuation-head">
+          <div>
+            <span>Deal rating</span>
+            <span class="deal-badge deal-good">GOOD</span>
+          </div>
+          <div>
+            <span>Estimated value</span>
+            <strong>$800,000</strong>
+          </div>
+          <div>
+            <span>Value range</span>
+            <strong>$750,000 - $850,000</strong>
+          </div>
+          <div>
+            <span>Ask vs est.</span>
+            <strong>-6.3%</strong>
+          </div>
+        </div>
+        <p><strong>Comp take:</strong> Zillow/Redfin estimates around $768k-$803k; compared with 25 Gray&#x27;s active $839.9k ask for less space, the pending price looked strong if condition was acceptable.</p>
+        <p><strong>Comp confidence:</strong> MEDIUM</p>
+        <ul class="comps">
+          <li>
+            <strong>11 Appletree Ln</strong>
+            Bedford -
+            Unknown sold
+            contingent as of 2026-08-26
+            <span>
+              4 BR /
+              2 BA /
+              1,959 sf
+              
+            </span>
+             <a href="https://www.zillow.com/homedetails/11-Appletree-Ln-Bedford-MA-01730/57046080_zpid/" target="_blank" rel="noopener">source</a>
+            <em>Contingent at $788,000 with more beds/baths and larger lot; close market reference.</em>
+          </li>
+        
+          <li>
+            <strong>25 Gray Ter</strong>
+            Bedford -
+            Unknown sold
+            active as of 2026-09-06
+            <span>
+              3 BR /
+              1.5 BA /
+              1,291 sf
+              
+            </span>
+             <a href="https://www.redfin.com/MA/Bedford/25-Gray-Ter-01730/home/11545709" target="_blank" rel="noopener">source</a>
+            <em>Active at $839,900 with less living area and land; supports value for 50 Notre Dame if condition is not too rough.</em>
+          </li>
+        </ul>
+      </div>
+    
+
+      <div class="notes">
+        <p><strong>Condition:</strong> Estate sale described as a blank slate needing buyer design ideas; closing expected to take 4-5 months.</p>
+        <p><strong>Location:</strong> Listing says quiet street in Revolutionary Ridge near highways, fields, trails, town center, and Minuteman Bikeway.</p>
+        <p><strong>Confidence:</strong> HIGH</p>
+      </div>
+
+      <div class="links">
+        <a class="button" href="https://www.redfin.com/MA/Bedford/50-Notre-Dame-Rd-01730/home/11541527" target="_blank">Open listing</a>
+         &nbsp; Other: <a href="https://www.zillow.com/homedetails/50-Notre-Dame-Rd-Bedford-MA-01730/57047290_zpid/" target="_blank" rel="noopener">source</a>
+      </div>
+    </article>
+    
+    <article class="card">
+      <div class="title-row">
+        <div class="title-main">
+          <div>
+            <h3>18 Flint Ave</h3>
+            <div class="town">Stoneham</div>
+          </div>
+          <div class="listing-photo placeholder" aria-hidden="true"></div>
         </div>
         <div class="price">$649,900</div>
       </div>
@@ -145,7 +832,7 @@
         <div>Highway/noise <span class="badge unknown">UNKNOWN</span></div>
       </div>
 
-      <div class="why"><strong>Why it matches:</strong> Active single-family listing under $820,000 with 4 bedrooms, 2 baths, 1,728 sqft living area, about 10,890 sqft lot, and 1 garage space.</div>
+      <div class="miss"><strong>Why it misses:</strong><ul><li>Not returned by the latest live search; verify this listing is still active before relying on it.</li></ul></div>
 
       
       <div class="valuation">
@@ -232,9 +919,532 @@
     
     <article class="card">
       <div class="title-row">
-        <div>
-          <h3>33 Cold Spring Rd</h3>
-          <div class="town">Westford</div>
+        <div class="title-main">
+          <div>
+            <h3>37 Park St</h3>
+            <div class="town">Wilmington</div>
+          </div>
+          <div class="listing-photo placeholder" aria-hidden="true"></div>
+        </div>
+        <div class="price">$714,900</div>
+      </div>
+
+      <div class="facts">
+        <div><span>Status</span><strong>Active</strong></div>
+        <div><span>Beds</span><strong>4</strong></div>
+        <div><span>Baths</span><strong>2.5</strong></div>
+        <div><span>House</span><strong>2,800 sf</strong></div>
+        <div><span>Lot</span><strong>19,166 sf</strong></div>
+        <div><span>Garage</span><strong>1</strong></div>
+      </div>
+
+      <div class="checks">
+        <div>Sump <span class="badge unknown">UNKNOWN</span></div>
+        <div>Easement <span class="badge unknown">UNKNOWN</span></div>
+        <div>Road <span class="badge unknown">UNKNOWN</span></div>
+        <div>Highway/noise <span class="badge unknown">UNKNOWN</span></div>
+      </div>
+
+      <div class="miss"><strong>Why it misses:</strong><ul><li>Not returned by the latest live search; verify this listing is still active before relying on it.</li></ul></div>
+
+      
+      <div class="valuation">
+        <div class="valuation-head">
+          <div>
+            <span>Deal rating</span>
+            <span class="deal-badge deal-good">GOOD</span>
+          </div>
+          <div>
+            <span>Estimated value</span>
+            <strong>$750,000</strong>
+          </div>
+          <div>
+            <span>Value range</span>
+            <strong>$710,000 - $785,000</strong>
+          </div>
+          <div>
+            <span>Ask vs est.</span>
+            <strong>-4.7%</strong>
+          </div>
+        </div>
+        <p><strong>Comp take:</strong> Recent Wilmington sold comps on the listing page ranged from $655K to $875K, including smaller 3-bedroom ranches near $655K-$720K and larger/updated homes near $805K-$875K. At $255/sq ft for 2,800 total finished sq ft with garage, the ask is competitive if the finished lower level quality is acceptable.</p>
+        <p><strong>Comp confidence:</strong> MEDIUM</p>
+        <ul class="comps">
+          <li>
+            <strong>32 Hathaway Rd</strong>
+            Wilmington -
+            $811,000 sold
+            2026-06-04
+            <span>
+              5 BR /
+              2 BA /
+              1,740 sf
+               / $466/sf
+            </span>
+             <a href="https://www.redfin.com/MA/Wilmington/37-Park-St-01887/home/11702459" target="_blank" rel="noopener">source</a>
+            <em>Recent same-town sale with more bedrooms but less finished area; supports mid/high-$700K value if condition is good.</em>
+          </li>
+        
+          <li>
+            <strong>300 Woburn St</strong>
+            Wilmington -
+            $875,000 sold
+            2026-05-08
+            <span>
+              3 BR /
+              2 BA /
+              2,402 sf
+               / $364/sf
+            </span>
+             <a href="https://www.redfin.com/MA/Wilmington/37-Park-St-01887/home/11702459" target="_blank" rel="noopener">source</a>
+            <em>Same town and recent; larger/likely superior comp, useful as upper support.</em>
+          </li>
+        
+          <li>
+            <strong>207 Salem St</strong>
+            Wilmington -
+            $720,000 sold
+            2026-05-08
+            <span>
+              3 BR /
+              1 BA /
+              1,331 sf
+               / $541/sf
+            </span>
+             <a href="https://www.redfin.com/MA/Wilmington/37-Park-St-01887/home/11702459" target="_blank" rel="noopener">source</a>
+            <em>Same town, recent sale, smaller and fewer baths; supports value above smaller-ranch baseline.</em>
+          </li>
+        </ul>
+      </div>
+    
+
+      <div class="notes">
+        <p><strong>Condition:</strong> Ranch with finished walk-out lower level, two fireplaces, sunroom, hardwood floors, attached garage, private sewer, and older 1958 construction. Listing presents the home as functional and spacious rather than fully renovated.</p>
+        <p><strong>Location:</strong> Listing notes North Wilmington location and highway access. I did not verify a direct highway-noise issue from the listing text, but proximity to Rt. 93 should be checked in person.</p>
+        <p><strong>Confidence:</strong> MEDIUM</p>
+      </div>
+
+      <div class="links">
+        <a class="button" href="https://www.redfin.com/MA/Wilmington/37-Park-St-01887/home/11702459" target="_blank">Open listing</a>
+         &nbsp; Other: <a href="https://jparmagnolia.com/property/3-73542420-37-Park-St-Wilmington-MA-01887/" target="_blank" rel="noopener">source</a> · <a href="https://www.compass.com/homedetails/37-Park-St-Wilmington-MA-01887/1YYLC7_pid/" target="_blank" rel="noopener">source</a>
+      </div>
+    </article>
+    
+    <article class="card">
+      <div class="title-row">
+        <div class="title-main">
+          <div>
+            <h3>7 Kennedy Cir</h3>
+            <div class="town">Wakefield, MA</div>
+          </div>
+          <div class="listing-photo placeholder" aria-hidden="true"></div>
+        </div>
+        <div class="price">$724,999</div>
+      </div>
+
+      <div class="facts">
+        <div><span>Status</span><strong>Pending</strong></div>
+        <div><span>Beds</span><strong>3</strong></div>
+        <div><span>Baths</span><strong>1.5</strong></div>
+        <div><span>House</span><strong>1,762 sf</strong></div>
+        <div><span>Lot</span><strong>12,911 sf</strong></div>
+        <div><span>Garage</span><strong>1</strong></div>
+      </div>
+
+      <div class="checks">
+        <div>Sump <span class="badge unknown">UNKNOWN</span></div>
+        <div>Easement <span class="badge unknown">UNKNOWN</span></div>
+        <div>Road <span class="badge good">CLEAR</span></div>
+        <div>Highway/noise <span class="badge unknown">UNKNOWN</span></div>
+      </div>
+
+      <div class="miss"><strong>Why it misses:</strong><ul><li>Not Active; Redfin showed Pending after earlier active/contingent history.</li><li>Not returned by the latest live search; verify this listing is still active before relying on it.</li></ul></div>
+
+      
+      <div class="valuation">
+        <div class="valuation-head">
+          <div>
+            <span>Deal rating</span>
+            <span class="deal-badge deal-good">GOOD</span>
+          </div>
+          <div>
+            <span>Estimated value</span>
+            <strong>$788,500</strong>
+          </div>
+          <div>
+            <span>Value range</span>
+            <strong>$760,000 - $825,000</strong>
+          </div>
+          <div>
+            <span>Ask vs est.</span>
+            <strong>-8.1%</strong>
+          </div>
+        </div>
+        <p><strong>Comp take:</strong> Redfin estimate was about $788,480 and Realtor automated values ranged about $786K-$872.8K. Pending status likely reflects market recognition of value; if it were still active, the price would screen attractive.</p>
+        <p><strong>Comp confidence:</strong> LOW</p>
+        <ul class="comps">
+          <li>
+            <strong>Redfin nearby comp set</strong>
+            Wakefield, MA -
+            $717,000 sold
+            recent, exact date not visible
+            <span>
+              Unknown BR /
+              Unknown BA /
+              Unknown sf
+              
+            </span>
+             <a href="https://www.redfin.com/MA/Wakefield/7-Kennedy-Cir-01880/home/8762030" target="_blank" rel="noopener">source</a>
+            <em>Redfin stated the estimate used 6 recent nearby sales priced between $717K and $905K, but individual comp details were not fully visible in search output.</em>
+          </li>
+        
+          <li>
+            <strong>Redfin nearby comp set</strong>
+            Wakefield, MA -
+            $905,000 sold
+            recent, exact date not visible
+            <span>
+              Unknown BR /
+              Unknown BA /
+              Unknown sf
+              
+            </span>
+             <a href="https://www.redfin.com/MA/Wakefield/7-Kennedy-Cir-01880/home/8762030" target="_blank" rel="noopener">source</a>
+            <em>Upper end of Redfin&#x27;s nearby comparable range for 7 Kennedy Cir.</em>
+          </li>
+        </ul>
+      </div>
+    
+
+      <div class="notes">
+        <p><strong>Condition:</strong> Listing describes well-maintained ranch with hardwood floors, formal dining, pantry kitchen, three-season porch, partially finished basement, mudroom, and attached garage.</p>
+        <p><strong>Location:</strong> Quiet no-through-traffic cul-de-sac per listing; near schools, Lake Quannapowitt, MBTA, shopping, restaurants, and major commuter routes.</p>
+        <p><strong>Confidence:</strong> MEDIUM</p>
+      </div>
+
+      <div class="links">
+        <a class="button" href="https://www.redfin.com/MA/Wakefield/7-Kennedy-Cir-01880/home/8762030" target="_blank">Open listing</a>
+         &nbsp; Other: <a href="https://www.homes.com/property/7-kennedy-cir-wakefield-ma/yxnlyewh10h81/" target="_blank" rel="noopener">source</a> · <a href="https://www.realtor.com/realestateandhomes-detail/7-Kennedy-Cir_Wakefield_MA_01880_M48609-68880" target="_blank" rel="noopener">source</a> · <a href="https://www.zillow.com/homedetails/7-Kennedy-Cir-Wakefield-MA-01880/56354714_zpid/" target="_blank" rel="noopener">source</a>
+      </div>
+    </article>
+    
+    <article class="card">
+      <div class="title-row">
+        <div class="title-main">
+          <div>
+            <h3>12 Southwick Rd</h3>
+            <div class="town">North Reading</div>
+          </div>
+          <div class="listing-photo placeholder" aria-hidden="true"></div>
+        </div>
+        <div class="price">$725,000</div>
+      </div>
+
+      <div class="facts">
+        <div><span>Status</span><strong>Pending</strong></div>
+        <div><span>Beds</span><strong>3</strong></div>
+        <div><span>Baths</span><strong>1.5</strong></div>
+        <div><span>House</span><strong>1,680 sf</strong></div>
+        <div><span>Lot</span><strong>27,443 sf</strong></div>
+        <div><span>Garage</span><strong>1</strong></div>
+      </div>
+
+      <div class="checks">
+        <div>Sump <span class="badge unknown">UNKNOWN</span></div>
+        <div>Easement <span class="badge unknown">UNKNOWN</span></div>
+        <div>Road <span class="badge unknown">UNKNOWN</span></div>
+        <div>Highway/noise <span class="badge bad">PROBLEM</span></div>
+      </div>
+
+      <div class="miss"><strong>Why it misses:</strong><ul><li>Listing says it is minutes from I-93 and I-95, requiring noise diligence</li><li>Not returned by the latest live search; verify this listing is still active before relying on it.</li><li>Status is pending, not Active</li></ul></div>
+
+      
+      <div class="valuation">
+        <div class="valuation-head">
+          <div>
+            <span>Deal rating</span>
+            <span class="deal-badge deal-good">GOOD</span>
+          </div>
+          <div>
+            <span>Estimated value</span>
+            <strong>$790,000</strong>
+          </div>
+          <div>
+            <span>Value range</span>
+            <strong>$750,000 - $830,000</strong>
+          </div>
+          <div>
+            <span>Ask vs est.</span>
+            <strong>-8.2%</strong>
+          </div>
+        </div>
+        <p><strong>Comp take:</strong> Redfin estimated value around $812K and cited nearby sales $700K-$811K. Given condition notes and lot size, $725K looked attractive before pending status.</p>
+        <p><strong>Comp confidence:</strong> LOW</p>
+        <ul class="comps">
+          <li>
+            <strong>7 Burditt Rd</strong>
+            North Reading -
+            $720,000 sold
+            2026-07-24
+            <span>
+              3 BR /
+              2 BA /
+              1,360 sf
+               / $529/sf
+            </span>
+             <a href="https://www.compass.com/homedetails/7-Burditt-Rd-North-Reading-MA-01864/1ZL635_pid/" target="_blank" rel="noopener">source</a>
+            <em>Recent North Reading sale with similar bedroom count but smaller home and no garage.</em>
+          </li>
+        
+          <li>
+            <strong>1 East St</strong>
+            North Reading -
+            $742,500 sold
+            2026-06-29
+            <span>
+              4 BR /
+              2 BA /
+              1,684 sf
+               / $441/sf
+            </span>
+             <a href="https://www.redfin.com/MA/North-Reading/1-East-St-01864/home/11435026" target="_blank" rel="noopener">source</a>
+            <em>Very similar size and nearby town, but smaller lot and sold status.</em>
+          </li>
+        </ul>
+      </div>
+    
+
+      <div class="notes">
+        <p><strong>Condition:</strong> Lovingly maintained fully dormered Cape with hardwood floors, custom woodwork, fireplace, central air, fresh paint, newer roof, and brand-new septic.</p>
+        <p><strong>Location:</strong> Desirable neighborhood per listing, but commuter-proximity language to I-93/I-95 means highway-noise status is not clear.</p>
+        <p><strong>Confidence:</strong> MEDIUM</p>
+      </div>
+
+      <div class="links">
+        <a class="button" href="https://www.redfin.com/MA/North-Reading/12-Southwick-Rd-01864/home/11421467" target="_blank">Open listing</a>
+         &nbsp; Other: <a href="https://www.realtor.com/realestateandhomes-detail/12-Southwick-Rd_North-Reading_MA_01864_M39916-68502" target="_blank" rel="noopener">source</a>
+      </div>
+    </article>
+    
+    <article class="card">
+      <div class="title-row">
+        <div class="title-main">
+          <div>
+            <h3>566 Main St</h3>
+            <div class="town">Stoneham</div>
+          </div>
+          <div class="listing-photo placeholder" aria-hidden="true"></div>
+        </div>
+        <div class="price">$744,900</div>
+      </div>
+
+      <div class="facts">
+        <div><span>Status</span><strong>Active</strong></div>
+        <div><span>Beds</span><strong>3</strong></div>
+        <div><span>Baths</span><strong>1.5</strong></div>
+        <div><span>House</span><strong>1,496 sf</strong></div>
+        <div><span>Lot</span><strong>13,621 sf</strong></div>
+        <div><span>Garage</span><strong>1</strong></div>
+      </div>
+
+      <div class="checks">
+        <div>Sump <span class="badge unknown">UNKNOWN</span></div>
+        <div>Easement <span class="badge unknown">UNKNOWN</span></div>
+        <div>Road <span class="badge bad">PROBLEM</span></div>
+        <div>Highway/noise <span class="badge bad">PROBLEM</span></div>
+      </div>
+
+      <div class="miss"><strong>Why it misses:</strong><ul><li>Address is on Main St, an obvious busy-road/main-road concern.</li><li>Not returned by the latest live search; verify this listing is still active before relying on it.</li><li>Road-noise concern cannot be cleared because of the Main St location.</li></ul></div>
+
+      
+      <div class="valuation">
+        <div class="valuation-head">
+          <div>
+            <span>Deal rating</span>
+            <span class="deal-badge deal-fair">FAIR</span>
+          </div>
+          <div>
+            <span>Estimated value</span>
+            <strong>$745,000</strong>
+          </div>
+          <div>
+            <span>Value range</span>
+            <strong>$700,000 - $790,000</strong>
+          </div>
+          <div>
+            <span>Ask vs est.</span>
+            <strong>-0.0%</strong>
+          </div>
+        </div>
+        <p><strong>Comp take:</strong> Stoneham sales for comparable 3-bed homes are often above $800k, but the subject is smaller and on Main St, warranting a discount.</p>
+        <p><strong>Comp confidence:</strong> MEDIUM</p>
+        <ul class="comps">
+          <li>
+            <strong>46 Macarthur Rd</strong>
+            Stoneham -
+            $830,000 sold
+            2026-08-28
+            <span>
+              3 BR /
+              2 BA /
+              1,406 sf
+               / $590/sf
+            </span>
+             <a href="https://www.redfin.com/city/36168/MA/Stoneham/housing-market" target="_blank" rel="noopener">source</a>
+            <em>Similar size and very recent sale, but better bath count and likely better street setting.</em>
+          </li>
+        
+          <li>
+            <strong>165-R Green St</strong>
+            Stoneham -
+            $815,000 sold
+            2026-08-28
+            <span>
+              4 BR /
+              2.5 BA /
+              1,906 sf
+               / $428/sf
+            </span>
+             <a href="https://www.redfin.com/city/36168/MA/Stoneham/housing-market" target="_blank" rel="noopener">source</a>
+            <em>Larger and better bath count; supports a discount for 566 Main.</em>
+          </li>
+        </ul>
+      </div>
+    
+
+      <div class="notes">
+        <p><strong>Condition:</strong> 1958 single-family with 1-car garage; limited current condition detail in accessible sources.</p>
+        <p><strong>Location:</strong> Main St location is the primary buyer-requirement issue.</p>
+        <p><strong>Confidence:</strong> HIGH</p>
+      </div>
+
+      <div class="links">
+        <a class="button" href="https://www.compass.com/homedetails/566-Main-St-Stoneham-MA-02180/1YQ7CX_pid/" target="_blank">Open listing</a>
+         &nbsp; Other: <a href="https://www.realtor.com/realestateandhomes-search/Stoneham_MA/type-single-family-home" target="_blank" rel="noopener">source</a>
+      </div>
+    </article>
+    
+    <article class="card">
+      <div class="title-row">
+        <div class="title-main">
+          <div>
+            <h3>52 Wyman St</h3>
+            <div class="town">Woburn, MA</div>
+          </div>
+          <a class="listing-photo-link" href="https://www.redfin.com/MA/Woburn/52-Wyman-St-01801/home/11808403" target="_blank" rel="noopener" aria-label="Open listing for 52 Wyman St"><img class="listing-photo" src="https://ssl.cdn-redfin.com/photo/52/bigphoto/616/73556616_0.jpg" alt="Exterior photo of 52 Wyman St" loading="lazy"></a>
+        </div>
+        <div class="price">$785,000</div>
+      </div>
+
+      <div class="facts">
+        <div><span>Status</span><strong>Active</strong></div>
+        <div><span>Beds</span><strong>4</strong></div>
+        <div><span>Baths</span><strong>2</strong></div>
+        <div><span>House</span><strong>1,901 sf</strong></div>
+        <div><span>Lot</span><strong>9,148 sf</strong></div>
+        <div><span>Garage</span><strong>1</strong></div>
+      </div>
+
+      <div class="checks">
+        <div>Sump <span class="badge bad">PROBLEM</span></div>
+        <div>Easement <span class="badge unknown">UNKNOWN</span></div>
+        <div>Road <span class="badge unknown">UNKNOWN</span></div>
+        <div>Highway/noise <span class="badge unknown">UNKNOWN</span></div>
+      </div>
+
+      <div class="miss"><strong>Why it misses:</strong><ul><li>Lot size is 9,148 sqft, below the 10,000 sqft minimum.</li><li>Lot size is below 10,000 sq ft.</li><li>MLS-derived Redfin details state there is a sump pump in the basement.</li></ul></div>
+
+      
+      <div class="valuation">
+        <div class="valuation-head">
+          <div>
+            <span>Deal rating</span>
+            <span class="deal-badge deal-fair">FAIR</span>
+          </div>
+          <div>
+            <span>Estimated value</span>
+            <strong>$800,000</strong>
+          </div>
+          <div>
+            <span>Value range</span>
+            <strong>$740,000 - $860,000</strong>
+          </div>
+          <div>
+            <span>Ask vs est.</span>
+            <strong>-1.9%</strong>
+          </div>
+        </div>
+        <p><strong>Comp take:</strong> Comparable Woburn 4-bedroom homes include 3 Golden Ter at $825k, 4 Sendick Rd at $816k, and 1 Linden St at $875k. The subject&#x27;s garage and condition support the ask, but smaller lot and sump issue limit upside.</p>
+        <p><strong>Comp confidence:</strong> MEDIUM</p>
+        <ul class="comps">
+          <li>
+            <strong>4 Sendick Rd</strong>
+            Woburn, MA -
+            $816,000 sold
+            2026-07-15
+            <span>
+              4 BR /
+              1.5 BA /
+              1,616 sf
+               / $505/sf
+            </span>
+             <a href="https://www.trulia.com/sold/Woburn%2CMA/4p_beds/" target="_blank" rel="noopener">source</a>
+            <em>Same town and bedroom count, smaller and fewer baths.</em>
+          </li>
+        
+          <li>
+            <strong>3 Golden Ter</strong>
+            Woburn, MA -
+            $825,000 sold
+            2026-06-01
+            <span>
+              4 BR /
+              2 BA /
+              2,052 sf
+               / $402/sf
+            </span>
+             <a href="https://www.trulia.com/sold/Woburn%2CMA/4p_beds/" target="_blank" rel="noopener">source</a>
+            <em>Same town, same bed/bath count, slightly larger.</em>
+          </li>
+        
+          <li>
+            <strong>1 Linden St</strong>
+            Woburn, MA -
+            $875,000 sold
+            2026-05-21
+            <span>
+              4 BR /
+              1.5 BA /
+              1,972 sf
+               / $444/sf
+            </span>
+             <a href="https://www.trulia.com/sold/Woburn%2CMA/4p_beds/" target="_blank" rel="noopener">source</a>
+            <em>Same town, similar size, same bedroom count and similar bath count.</em>
+          </li>
+        </ul>
+      </div>
+    
+
+      <div class="notes">
+        <p><strong>Condition:</strong> Cape with roof about 4 years old and heating system about 15 years old; maintained by same family for 48 years.</p>
+        <p><strong>Location:</strong> Corner lot near elementary school; listing notes highway access in community amenities but no direct highway adjacency found.</p>
+        <p><strong>Confidence:</strong> HIGH</p>
+      </div>
+
+      <div class="links">
+        <a class="button" href="https://www.redfin.com/MA/Woburn/52-Wyman-St-01801/home/11808403" target="_blank">Open listing</a>
+         &nbsp; Other: <a href="https://www.realtor.com/realestateandhomes-detail/52-Wyman-St_Woburn_MA_01801_M36060-41416" target="_blank" rel="noopener">source</a> · <a href="https://www.trulia.com/home/52-wyman-st-woburn-ma-01801-56384361" target="_blank" rel="noopener">source</a>
+      </div>
+    </article>
+    
+    <article class="card">
+      <div class="title-row">
+        <div class="title-main">
+          <div>
+            <h3>33 Cold Spring Rd</h3>
+            <div class="town">Westford</div>
+          </div>
+          <div class="listing-photo placeholder" aria-hidden="true"></div>
         </div>
         <div class="price">$649,000</div>
       </div>
@@ -255,7 +1465,7 @@
         <div>Highway/noise <span class="badge unknown">UNKNOWN</span></div>
       </div>
 
-      <div class="why"><strong>Why it matches:</strong> Active single-family listing under $820,000 with 3 bedrooms, 2 baths, 1,512 sqft living area, 0.72-0.73 acre lot, and 2 garage spaces.</div>
+      <div class="miss"><strong>Why it misses:</strong><ul><li>Not returned by the latest live search; verify this listing is still active before relying on it.</li></ul></div>
 
       
       <div class="valuation">
@@ -342,30 +1552,199 @@
     
     <article class="card">
       <div class="title-row">
-        <div>
-          <h3>4 Mayflower Dr</h3>
-          <div class="town">Stoneham</div>
+        <div class="title-main">
+          <div>
+            <h3>29 Fayette Rd</h3>
+            <div class="town">Bedford</div>
+          </div>
+          <div class="listing-photo placeholder" aria-hidden="true"></div>
         </div>
-        <div class="price">$799,000</div>
+        <div class="price">$649,999</div>
       </div>
 
       <div class="facts">
         <div><span>Status</span><strong>Active</strong></div>
-        <div><span>Beds</span><strong>4</strong></div>
+        <div><span>Beds</span><strong>3</strong></div>
         <div><span>Baths</span><strong>1.5</strong></div>
-        <div><span>House</span><strong>2,181 sf</strong></div>
-        <div><span>Lot</span><strong>10,690 sf</strong></div>
+        <div><span>House</span><strong>988 sf</strong></div>
+        <div><span>Lot</span><strong>14,810 sf</strong></div>
+        <div><span>Garage</span><strong>1</strong></div>
+      </div>
+
+      <div class="checks">
+        <div>Sump <span class="badge unknown">UNKNOWN</span></div>
+        <div>Easement <span class="badge unknown">UNKNOWN</span></div>
+        <div>Road <span class="badge unknown">UNKNOWN</span></div>
+        <div>Highway/noise <span class="badge unknown">UNKNOWN</span></div>
+      </div>
+
+      <div class="miss"><strong>Why it misses:</strong><ul><li>Finished/living area is 988 sqft, below the 1,400 sqft requirement.</li><li>Living area is below 1,400 sq ft.</li><li>Not returned by the latest live search; verify this listing is still active before relying on it.</li></ul></div>
+
+      
+      <div class="valuation">
+        <div class="valuation-head">
+          <div>
+            <span>Deal rating</span>
+            <span class="deal-badge deal-fair">FAIR</span>
+          </div>
+          <div>
+            <span>Estimated value</span>
+            <strong>$660,000</strong>
+          </div>
+          <div>
+            <span>Value range</span>
+            <strong>$620,000 - $700,000</strong>
+          </div>
+          <div>
+            <span>Ask vs est.</span>
+            <strong>-1.5%</strong>
+          </div>
+        </div>
+        <p><strong>Comp take:</strong> Small verified living area limits value despite Bedford location and garage; price is plausible but not a clear bargain.</p>
+        <p><strong>Comp confidence:</strong> LOW</p>
+        <ul class="comps">
+          <li>
+            <strong>50 Notre Dame Rd</strong>
+            Bedford -
+            Unknown sold
+            pending as of 2026-06-17
+            <span>
+              3 BR /
+              1.5 BA /
+              1,923 sf
+              
+            </span>
+             <a href="https://www.redfin.com/MA/Bedford/50-Notre-Dame-Rd-01730/home/11541527" target="_blank" rel="noopener">source</a>
+            <em>Much larger pending Bedford reference at $749,900, supporting discount for 29 Fayette.</em>
+          </li>
+        
+          <li>
+            <strong>25 Gray Ter</strong>
+            Bedford -
+            Unknown sold
+            active as of 2026-09-06
+            <span>
+              3 BR /
+              1.5 BA /
+              1,291 sf
+              
+            </span>
+             <a href="https://www.redfin.com/MA/Bedford/25-Gray-Ter-01730/home/11545709" target="_blank" rel="noopener">source</a>
+            <em>Larger active Bedford ranch at $839,900; helps bracket value but not a sold comp.</em>
+          </li>
+        </ul>
+      </div>
+    
+
+      <div class="notes">
+        <p><strong>Condition:</strong> Listing notes space and potential beyond listed square footage, but verified living area is only 988 sqft.</p>
+        <p><strong>Location:</strong> No obvious main-road/highway issue found from address alone, but not independently cleared.</p>
+        <p><strong>Confidence:</strong> MEDIUM</p>
+      </div>
+
+      <div class="links">
+        <a class="button" href="https://www.redfin.com/MA/Bedford/29-Fayette-Rd-01730/home/11546783" target="_blank">Open listing</a>
+         &nbsp; Other: <a href="https://www.realtor.com/realestateandhomes-search/Bedford_MA/type-single-family-home" target="_blank" rel="noopener">source</a>
+      </div>
+    </article>
+    
+    <article class="card">
+      <div class="title-row">
+        <div class="title-main">
+          <div>
+            <h3>14 Katherine Rd</h3>
+            <div class="town">Stoneham</div>
+          </div>
+          <div class="listing-photo placeholder" aria-hidden="true"></div>
+        </div>
+        <div class="price">$669,900</div>
+      </div>
+
+      <div class="facts">
+        <div><span>Status</span><strong>Active</strong></div>
+        <div><span>Beds</span><strong>3</strong></div>
+        <div><span>Baths</span><strong>1.5</strong></div>
+        <div><span>House</span><strong>1,545 sf</strong></div>
+        <div><span>Lot</span><strong>4,800 sf</strong></div>
+        <div><span>Garage</span><strong>1</strong></div>
+      </div>
+
+      <div class="checks">
+        <div>Sump <span class="badge unknown">UNKNOWN</span></div>
+        <div>Easement <span class="badge unknown">UNKNOWN</span></div>
+        <div>Road <span class="badge unknown">UNKNOWN</span></div>
+        <div>Highway/noise <span class="badge unknown">UNKNOWN</span></div>
+      </div>
+
+      <div class="miss"><strong>Why it misses:</strong><ul><li>Lot size is below 10,000 sq ft.</li><li>Lot size is only 4,800 sq ft, below the 10,000 sq ft requirement.</li><li>Not returned by the latest live search; verify this listing is still active before relying on it.</li></ul></div>
+
+      
+      <div class="valuation">
+        <div class="valuation-head">
+          <div>
+            <span>Deal rating</span>
+            <span class="deal-badge deal-fair">FAIR</span>
+          </div>
+          <div>
+            <span>Estimated value</span>
+            <strong>$675,000</strong>
+          </div>
+          <div>
+            <span>Value range</span>
+            <strong>$650,000 - $710,000</strong>
+          </div>
+          <div>
+            <span>Ask vs est.</span>
+            <strong>-0.8%</strong>
+          </div>
+        </div>
+        <p><strong>Comp take:</strong> Realtor AVMs clustered around $694K-$710K; Redfin estimate was about $658K. Nearby Redfin comparable range was $662K-$765K. The asking price appears supported, but small lot limits value for this buyer.</p>
+        <p><strong>Comp confidence:</strong> LOW</p>
+        
+      </div>
+    
+
+      <div class="notes">
+        <p><strong>Condition:</strong> Charming 1924 Colonial with hardwood floors, screened porch, updated bath, detached garage/workshop, solar panels, and unfinished basement.</p>
+        <p><strong>Location:</strong> Nobility Hill area; listing notes easy access to Routes 93 and 28. No direct noise clearance was verified.</p>
+        <p><strong>Confidence:</strong> MEDIUM</p>
+      </div>
+
+      <div class="links">
+        <a class="button" href="https://www.redfin.com/MA/Stoneham/14-Katherine-Rd-02180/home/11664558" target="_blank">Open listing</a>
+         &nbsp; Other: <a href="https://www.realtor.com/realestateandhomes-detail/14-Katherine-Rd_Stoneham_MA_02180_M30417-35843" target="_blank" rel="noopener">source</a> · <a href="https://www.trulia.com/home/14-katherine-rd-stoneham-ma-02180-56340144" target="_blank" rel="noopener">source</a>
+      </div>
+    </article>
+    
+    <article class="card">
+      <div class="title-row">
+        <div class="title-main">
+          <div>
+            <h3>20 Plymouth Rd</h3>
+            <div class="town">Wakefield</div>
+          </div>
+          <div class="listing-photo placeholder" aria-hidden="true"></div>
+        </div>
+        <div class="price">$725,000</div>
+      </div>
+
+      <div class="facts">
+        <div><span>Status</span><strong>Contingent</strong></div>
+        <div><span>Beds</span><strong>3</strong></div>
+        <div><span>Baths</span><strong>1.5</strong></div>
+        <div><span>House</span><strong>1,539 sf</strong></div>
+        <div><span>Lot</span><strong>12,197 sf</strong></div>
         <div><span>Garage</span><strong>2</strong></div>
       </div>
 
       <div class="checks">
         <div>Sump <span class="badge unknown">UNKNOWN</span></div>
         <div>Easement <span class="badge unknown">UNKNOWN</span></div>
-        <div>Road <span class="badge good">CLEAR</span></div>
+        <div>Road <span class="badge unknown">UNKNOWN</span></div>
         <div>Highway/noise <span class="badge unknown">UNKNOWN</span></div>
       </div>
 
-      <div class="why"><strong>Why it matches:</strong> Active single-family listing under $820,000 with 4 bedrooms, 1.5 baths, 2,181 sqft living area, 10,690 sqft lot, and 2 garage spaces.</div>
+      <div class="miss"><strong>Why it misses:</strong><ul><li>Listing notes deferred maintenance and upgrades needed</li><li>Not returned by the latest live search; verify this listing is still active before relying on it.</li><li>Status is contingent, not Active</li></ul></div>
 
       
       <div class="valuation">
@@ -376,219 +1755,79 @@
           </div>
           <div>
             <span>Estimated value</span>
-            <strong>$795,000</strong>
+            <strong>$735,000</strong>
           </div>
           <div>
             <span>Value range</span>
-            <strong>$760,000 - $835,000</strong>
+            <strong>$690,000 - $775,000</strong>
           </div>
           <div>
             <span>Ask vs est.</span>
-            <strong>+0.5%</strong>
+            <strong>-1.4%</strong>
           </div>
         </div>
-        <p><strong>Comp take:</strong> Zillow estimate is essentially at list price, and recent Stoneham sales show comparable homes ranging roughly from the low $800Ks to mid/high $800Ks. Subject needs an as-is/update adjustment, bringing value close to ask.</p>
-        <p><strong>Comp confidence:</strong> MEDIUM</p>
+        <p><strong>Comp take:</strong> Wakefield smaller/older homes near this range include 86 Redfield at $779K active but smaller lot. Condition issues keep value close to the $725K list despite 2-car garage and good lot.</p>
+        <p><strong>Comp confidence:</strong> LOW</p>
         <ul class="comps">
           <li>
-            <strong>46 Macarthur Rd</strong>
-            Stoneham -
-            $830,000 sold
-            2026-08-28
+            <strong>86 Redfield Rd</strong>
+            Wakefield -
+            Unknown sold
+            Active comp
             <span>
               3 BR /
-              2 BA /
-              1,406 sf
-               / $590/sf
+              1.5 BA /
+              1,458 sf
+               / $534/sf
             </span>
-             <a href="https://www.redfin.com/city/36168/MA/Stoneham/housing-market" target="_blank" rel="noopener">source</a>
-            <em>Same town, smaller home but sold above subject list; likely condition/location differences matter.</em>
-          </li>
-        
-          <li>
-            <strong>165-R Green St</strong>
-            Stoneham -
-            $815,000 sold
-            2026-08-28
-            <span>
-              4 BR /
-              2.5 BA /
-              1,906 sf
-               / $428/sf
-            </span>
-             <a href="https://www.redfin.com/city/36168/MA/Stoneham/housing-market" target="_blank" rel="noopener">source</a>
-            <em>Same town, similar bedroom count, smaller but more baths; sold close to subject ask.</em>
-          </li>
-        
-          <li>
-            <strong>17 Tamarock Ter</strong>
-            Stoneham -
-            $865,000 sold
-            2026-08-27
-            <span>
-              3 BR /
-              2.5 BA /
-              2,332 sf
-               / $371/sf
-            </span>
-             <a href="https://www.redfin.com/city/36168/MA/Stoneham/housing-market" target="_blank" rel="noopener">source</a>
-            <em>Same town, similar size, better bath count; supports subject around high $700Ks to low $800Ks after adjustment.</em>
+             <a href="https://www.realtor.com/realestateandhomes-detail/86-Redfield-Rd_Wakefield_MA_01880_M48922-98166" target="_blank" rel="noopener">source</a>
+            <em>Current active listing, not sold; smaller lot and garage but similar bed/bath/size.</em>
           </li>
         </ul>
       </div>
     
 
       <div class="notes">
-        <p><strong>Condition:</strong> Listing says property is sold as-is and offers potential to update; appears dated but substantial.</p>
-        <p><strong>Location:</strong> Mayflower Dr appears residential. Listing notes commuter access and being about 2 miles from Route 128/I-95 with access to I-93; no direct road-noise verification found.</p>
+        <p><strong>Condition:</strong> Ranch described as a diamond in the rough with deferred maintenance/upgrades; hardwood floors, 3-season porch, level lot, abuts town land.</p>
+        <p><strong>Location:</strong> No obvious main-road issue from the street name; highway-noise clearance not verified.</p>
         <p><strong>Confidence:</strong> MEDIUM</p>
       </div>
 
       <div class="links">
-        <a class="button" href="https://www.zillow.com/homedetails/4-Mayflower-Dr-Stoneham-MA-02180/56336374_zpid/" target="_blank">Open listing</a>
-         &nbsp; Other: <a href="https://www.compass.com/homedetails/4-Mayflower-Dr-Stoneham-MA-02180/1Z6UOH_pid/" target="_blank" rel="noopener">source</a>
+        <a class="button" href="https://www.redfin.com/MA/Wakefield/20-Plymouth-Rd-01880/home/8741482" target="_blank">Open listing</a>
+         &nbsp; Other: <a href="https://www.compass.com/homes-for-sale/wakefield-ma/under-contract/" target="_blank" rel="noopener">source</a>
       </div>
     </article>
     
     <article class="card">
       <div class="title-row">
-        <div>
-          <h3>15 Frances Rd</h3>
-          <div class="town">Burlington</div>
+        <div class="title-main">
+          <div>
+            <h3>64 Brand Ave</h3>
+            <div class="town">Wilmington</div>
+          </div>
+          <div class="listing-photo placeholder" aria-hidden="true"></div>
         </div>
-        <div class="price">$810,000</div>
-      </div>
-
-      <div class="facts">
-        <div><span>Status</span><strong>Active</strong></div>
-        <div><span>Beds</span><strong>3</strong></div>
-        <div><span>Baths</span><strong>2</strong></div>
-        <div><span>House</span><strong>1,584 sf</strong></div>
-        <div><span>Lot</span><strong>13,181 sf</strong></div>
-        <div><span>Garage</span><strong>1</strong></div>
-      </div>
-
-      <div class="checks">
-        <div>Sump <span class="badge unknown">UNKNOWN</span></div>
-        <div>Easement <span class="badge unknown">UNKNOWN</span></div>
-        <div>Road <span class="badge good">CLEAR</span></div>
-        <div>Highway/noise <span class="badge unknown">UNKNOWN</span></div>
-      </div>
-
-      <div class="why"><strong>Why it matches:</strong> Active single-family listing at $810,000 with 3 bedrooms, 2 baths, 1,584 sqft living area, 13,181 sqft lot, and 1 garage space.</div>
-
-      
-      <div class="valuation">
-        <div class="valuation-head">
-          <div>
-            <span>Deal rating</span>
-            <span class="deal-badge deal-fair">FAIR</span>
-          </div>
-          <div>
-            <span>Estimated value</span>
-            <strong>$805,000</strong>
-          </div>
-          <div>
-            <span>Value range</span>
-            <strong>$775,000 - $840,000</strong>
-          </div>
-          <div>
-            <span>Ask vs est.</span>
-            <strong>+0.6%</strong>
-          </div>
-        </div>
-        <p><strong>Comp take:</strong> Recent nearby Burlington comps cluster around $775,000-$850,000 for similar 3-bedroom homes, with some larger homes higher. Asking price is close to comp-supported value and near Trulia&#x27;s September estimate.</p>
-        <p><strong>Comp confidence:</strong> MEDIUM</p>
-        <ul class="comps">
-          <li>
-            <strong>106 Winn St</strong>
-            Burlington -
-            $775,000 sold
-            2026-08-21
-            <span>
-              3 BR /
-              2 BA /
-              1,950 sf
-               / $397/sf
-            </span>
-             <a href="https://www.trulia.com/home/15-frances-rd-burlington-ma-01803-57056598" target="_blank" rel="noopener">source</a>
-            <em>Nearby same bed/bath count and larger living area; supports value around list after location/condition adjustment.</em>
-          </li>
-        
-          <li>
-            <strong>3 Elizabeth Ave</strong>
-            Burlington -
-            $792,500 sold
-            2026-07-14
-            <span>
-              3 BR /
-              1.5 BA /
-              2,055 sf
-               / $386/sf
-            </span>
-             <a href="https://www.trulia.com/home/15-frances-rd-burlington-ma-01803-57056598" target="_blank" rel="noopener">source</a>
-            <em>Very nearby 3-bedroom sale; larger but fewer baths.</em>
-          </li>
-        
-          <li>
-            <strong>22 Mountain Rd</strong>
-            Burlington -
-            $850,000 sold
-            2026-06-26
-            <span>
-              3 BR /
-              1.5 BA /
-              1,527 sf
-               / $557/sf
-            </span>
-             <a href="https://www.trulia.com/home/15-frances-rd-burlington-ma-01803-57056598" target="_blank" rel="noopener">source</a>
-            <em>Similar size and bedroom count; sold above subject ask but may differ materially in condition/location.</em>
-          </li>
-        </ul>
-      </div>
-    
-
-      <div class="notes">
-        <p><strong>Condition:</strong> Listing says the home has potential, a functional layout, accessibility features, and a well-maintained exterior; interior may need buyer updates.</p>
-        <p><strong>Location:</strong> Frances Rd appears to be a neighborhood street; listing mentions highway access but no direct noise issue was verified.</p>
-        <p><strong>Confidence:</strong> MEDIUM</p>
-      </div>
-
-      <div class="links">
-        <a class="button" href="https://www.trulia.com/home/15-frances-rd-burlington-ma-01803-57056598" target="_blank">Open listing</a>
-         &nbsp; Other: <a href="https://www.realtor.com/realestateandhomes-search/01803" target="_blank" rel="noopener">source</a> · <a href="https://www.redfin.com/city/36100/MA/Burlington/garages" target="_blank" rel="noopener">source</a>
-      </div>
-    </article>
-    
-
-  <h2>Close Hits (1)</h2>
-  
-    <article class="card">
-      <div class="title-row">
-        <div>
-          <h3>316 Middlesex Ave</h3>
-          <div class="town">Wilmington</div>
-        </div>
-        <div class="price">$799,900</div>
+        <div class="price">$739,900</div>
       </div>
 
       <div class="facts">
         <div><span>Status</span><strong>Active</strong></div>
         <div><span>Beds</span><strong>4</strong></div>
         <div><span>Baths</span><strong>2</strong></div>
-        <div><span>House</span><strong>2,400 sf</strong></div>
-        <div><span>Lot</span><strong>28,750 sf</strong></div>
-        <div><span>Garage</span><strong>1</strong></div>
+        <div><span>House</span><strong>2,500 sf</strong></div>
+        <div><span>Lot</span><strong>12,197 sf</strong></div>
+        <div><span>Garage</span><strong>2</strong></div>
       </div>
 
       <div class="checks">
         <div>Sump <span class="badge unknown">UNKNOWN</span></div>
         <div>Easement <span class="badge unknown">UNKNOWN</span></div>
-        <div>Road <span class="badge bad">PROBLEM</span></div>
+        <div>Road <span class="badge unknown">UNKNOWN</span></div>
         <div>Highway/noise <span class="badge unknown">UNKNOWN</span></div>
       </div>
 
-      <div class="miss"><strong>Why it misses:</strong><ul><li>Located on Middlesex Ave, an obvious larger through road/arterial concern for the stated road-noise and busy-road requirement</li></ul></div>
+      <div class="miss"><strong>Why it misses:</strong><ul><li>Not returned by the latest live search; verify this listing is still active before relying on it.</li></ul></div>
 
       
       <div class="valuation">
@@ -599,62 +1838,77 @@
           </div>
           <div>
             <span>Estimated value</span>
-            <strong>$800,000</strong>
+            <strong>$760,000</strong>
           </div>
           <div>
             <span>Value range</span>
-            <strong>$760,000 - $840,000</strong>
+            <strong>$720,000 - $815,000</strong>
           </div>
           <div>
             <span>Ask vs est.</span>
-            <strong>+0.0%</strong>
+            <strong>-2.6%</strong>
           </div>
         </div>
-        <p><strong>Comp take:</strong> Value appears broadly supported by Wilmington market context for a 4-bedroom, 2-bath home with substantial lot and garage, but busy-road adjustment prevents a higher rating. Recent closed comparable detail was limited from public snippets, so confidence is low.</p>
-        <p><strong>Comp confidence:</strong> LOW</p>
+        <p><strong>Comp take:</strong> Zillow/Redfin estimates are roughly $743k-$780k. Recent Wilmington sold data show smaller 3-bed homes in the mid-$600ks and larger upgraded homes $900k+, so the reduced $739.9k list looks broadly supported rather than clearly cheap.</p>
+        <p><strong>Comp confidence:</strong> MEDIUM</p>
         <ul class="comps">
           <li>
-            <strong>409 Salem St</strong>
+            <strong>266 Burlington Ave</strong>
             Wilmington -
-            Unknown sold
-            pending listing, not closed comp
+            $655,000 sold
+            2026-08-28
             <span>
               3 BR /
-              2.5 BA /
-              2,194 sf
-               / $381/sf
+              1 BA /
+              2,256 sf
+               / $290/sf
             </span>
-             <a href="https://www.realtor.com/realestateandhomes-search/Wilmington_MA/type-single-family-home" target="_blank" rel="noopener">source</a>
-            <em>Pending nearby Wilmington listing at $835,000; not a closed comp, but similar size/lot range.</em>
+             <a href="https://www.redfin.com/zipcode/01887/recently-sold" target="_blank" rel="noopener">source</a>
+            <em>Recent Wilmington sale with similar size but fewer bedrooms/baths; listing noted a sump pump, so it is mainly a price-size reference.</em>
           </li>
         
           <li>
-            <strong>64 Brand Ave</strong>
+            <strong>178 Woburn St</strong>
             Wilmington -
-            Unknown sold
-            active listing, not sold comp
+            $900,000 sold
+            2026-08-06
+            <span>
+              3 BR /
+              2 BA /
+              2,765 sf
+               / $326/sf
+            </span>
+             <a href="https://www.redfin.com/zipcode/01887/recently-sold" target="_blank" rel="noopener">source</a>
+            <em>Larger recent ranch with stronger backyard amenities; supports upper range but needs downward adjustment for subject location/condition unknowns.</em>
+          </li>
+        
+          <li>
+            <strong>69 Middlesex Ave</strong>
+            Wilmington -
+            $1,175,000 sold
+            2026-07-22
             <span>
               4 BR /
-              2 BA /
-              2,500 sf
-               / $296/sf
+              2.5 BA /
+              2,428 sf
+               / $484/sf
             </span>
-             <a href="https://www.realtor.com/realestateandhomes-search/Wilmington_MA/type-single-family-home" target="_blank" rel="noopener">source</a>
-            <em>Active same-town 4-bedroom, 2-bath listing at $739,900; smaller lot and garage not verified.</em>
+             <a href="https://www.redfin.com/MA/Wilmington/27-Brand-Ave-01887/home/11694586" target="_blank" rel="noopener">source</a>
+            <em>Similar bed/size count but much higher price likely reflects condition/location differences; upper-bound comp only.</em>
           </li>
         </ul>
       </div>
     
 
       <div class="notes">
-        <p><strong>Condition:</strong> Older 1897 Colonial with large lot and detached garage/barn-style parking; detailed current condition requires showing/inspection.</p>
-        <p><strong>Location:</strong> Middlesex Ave is the main concern. Listing also notes public transportation, shopping, T-station, and highway access.</p>
+        <p><strong>Condition:</strong> Raised ranch/multi-level home in Silver Lake area with flexible finished lower level, deck, central air, and 2-car garage; no major adverse condition disclosure found.</p>
+        <p><strong>Location:</strong> Brand Ave appears residential from listing context; no obvious highway or main-road warning in listing text, but road noise was not independently verified.</p>
         <p><strong>Confidence:</strong> MEDIUM</p>
       </div>
 
       <div class="links">
-        <a class="button" href="https://www.compass.com/homedetails/316-Middlesex-Ave-Wilmington-MA-01887/1YZIAM_pid/" target="_blank">Open listing</a>
-         &nbsp; Other: <a href="https://www.realtor.com/realestateandhomes-search/Wilmington_MA/type-single-family-home" target="_blank" rel="noopener">source</a>
+        <a class="button" href="https://www.redfin.com/MA/Wilmington/64-Brand-Ave-01887/home/11694449" target="_blank">Open listing</a>
+         &nbsp; Other: <a href="https://www.realtor.com/realestateandhomes-detail/64-Brand-Ave_Wilmington_MA_01887_M46033-43458" target="_blank" rel="noopener">source</a> · <a href="https://www.zillow.com/homedetails/64-Brand-Ave-Wilmington-MA-01887/57140658_zpid/" target="_blank" rel="noopener">source</a>
       </div>
     </article>
     
@@ -662,7 +1916,7 @@
   <section class="footnotes">
     <h2 style="margin-top:0">Important Notes</h2>
     <ul>
-      <li>Comparable-sales confidence is constrained because public snippets often omit garage spaces, lot sizes, and exact condition details for sold comps.</li><li>Garage space was treated as a hard requirement. Properties with no verified garage space were not included as matches or close_hits.</li><li>I searched Woburn, Burlington, Reading, North Reading, Wakefield, Stoneham, Bedford, Westford, and Wilmington using current public listing pages from Realtor, Redfin, Zillow, Trulia, Compass, and brokerage MLS mirrors.</li><li>Road and highway-noise conclusions are based only on public listing text and obvious street-name/road-type clues; buyer should verify with a map, site visit, disclosure package, and attorney review.</li><li>Sump pump and easement status were marked unknown unless listing text affirmatively disclosed a condition. For example, 16 Central St in Wakefield disclosed both a sump pump and easements but had 0 garage spaces, so it was excluded.</li>
+      <li>Carried forward 30 listing(s) from recent runs because the latest live search omitted them; these are shown as close hits until re-verified.</li><li>Comparable-sales valuation is approximate and based on public listing/search-result data, not a formal appraisal.</li><li>I excluded properties with no verified garage space from both matches and close_hits, per your hard requirement.</li><li>Statuses and prices can change quickly; before touring or offering, verify the MLS PIN status and current list price directly with an agent.</li><li>Sump pump and easement statuses usually require seller disclosures, MLS attachments, inspection, municipal records, and deed/title review; most public listing pages do not prove those clear.</li>
       <li>"UNKNOWN" for sump/easement does not mean the house is clear. Verify
           seller disclosures, deed/plot plan, and MLS details before relying on it.</li>
       <li>Road-noise judgments from web research are screening tools only.
